@@ -1,0 +1,46 @@
+<section id="ristorante" class="boxed-layout">
+  <div class="ristorante-testo">
+    <h2>Ristorante</h2>
+    <p>
+      Al ristorante Allo <strong>Spada Reale</strong> vi accoglie la tradizione culinaria! Ogni Domenica offriamo un ricco e variegato menu fisso
+      che include antipasti caldi e freddi, primi e secondi piatti, tutti preparati con ingredienti freschi e di nostra produzione,
+      al costo di soli 30 euro.
+    </p>
+    <p>
+      Durante la settimana, proponiamo un menu a 15 euro, con un servizio rapido e un'atmosfera familiare.
+    </p>
+    <p>
+      👉 <strong><a href="/{{ .Site.Language.Lang }}/contatti/">Si consiglia sempre di prenotare</a> per garantire la disponibilità dei posti.</strong>
+    </p>
+  </div>
+
+  <div class="prenota-bottone">
+    <a href="/{{ .Site.Language.Lang }}/contatti/" class="btn-prenota">Prenota ora</a>
+  </div>
+
+  <div class="carousel">
+    <div class="css-slider">
+      <input type="radio" name="carousel" id="slide1" checked>
+      <input type="radio" name="carousel" id="slide2">
+      <input type="radio" name="carousel" id="slide3">
+
+      <div class="carousel-images">
+        <div class="slide">
+          <img src="/img/risto/slide1.jpg" alt="Sala ristorante Spada Reale">
+        </div>
+        <div class="slide">
+          <img src="/img/risto/slide2.jpg" alt="Bottiglie e quadri ristorante">
+        </div>
+        <div class="slide">
+          <img src="/img/risto/slide3.jpg" alt="Insegna esterna Spada Reale">
+        </div>
+      </div>
+
+      <div class="carousel-nav">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+    </div>
+  </div>
+</section>

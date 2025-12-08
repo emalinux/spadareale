@@ -1,0 +1,35 @@
+<section class="hero-plain">
+  <div class="hero-content">
+    
+    {{ if eq .Site.Language.Lang "it" }}
+      <h2 class="hero-subtitle">Ristorante – Camere – Piccola Bottega</h2>
+      <h1 class="hero-title">SPADA REALE</h1>
+      <p class="hero-text">
+        Nel cuore del Parco delle Alpi Marittime,<br>
+        un rifugio tranquillo tra natura e tradizione.<br>
+        Camere spaziose, cucina locale, e una piccola bottega artigianale.<br>
+        Scopri Roaschia tra escursioni, silenzio e ospitalità sincera.
+      </p>
+
+    {{ else if eq .Site.Language.Lang "en" }}
+      <h2 class="hero-subtitle">Restaurant – Rooms – Little Shop</h2>
+      <h1 class="hero-title">SPADA REALE</h1>
+      <p class="hero-text">
+        In the heart of the Maritime Alps Park,<br>
+        a peaceful retreat surrounded by nature and tradition.<br>
+        Spacious rooms, local cuisine, and a small artisan shop.<br>
+        Discover Roaschia with hikes, silence, and warm hospitality.
+      </p>
+
+    {{ else if eq .Site.Language.Lang "fr" }}
+      <h2 class="hero-subtitle">Restaurant – Chambres – Petite Boutique</h2>
+      <h1 class="hero-title">SPADA REALE</h1>
+      <p class="hero-text">
+        Au cœur du parc des Alpes maritimes,<br>
+        un havre de paix entre nature et tradition.<br>
+        Chambres spacieuses, cuisine locale et petite boutique artisanale.<br>
+        Découvrez Roaschia à travers randonnées, silence et hospitalité.
+      </p>
+    {{ end }}
+  </div>
+</section>
