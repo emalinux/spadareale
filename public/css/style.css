@@ -22,6 +22,10 @@ a:hover {
   padding: 0 1rem;
 }
 
+section {
+  margin-bottom: 5rem;
+}
+
 /* =======================
    🧢 HEADER + NAV
 ======================= */
@@ -181,10 +185,14 @@ a:hover {
   color: #6a2435;
   margin-bottom: 1.5rem;
   font-weight: bold;
+  display: inline-block;
+  border-bottom: 4px solid #c42020;
+  padding-bottom: 0.3rem;
 }
 
 .ristorante-testo p {
   font-size: 1.2rem;
+  text-align: justify;
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -338,4 +346,27 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #333;
+}
+
+.section-logo-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 4rem auto;
+  opacity: 0.5;
+  max-width: 800px;
+}
+
+.section-logo-divider img {
+  height: 40px;
+  opacity: 0.7;
+}
+
+.section-logo-divider hr {
+  flex: 1;
+  height: 1px;
+  background-color: #6a2435;
+  border: none;
+  opacity: 0.5;
 }

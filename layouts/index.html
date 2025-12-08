@@ -1,7 +1,9 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   {{ partial "hero.html" . }}
+  {{ partial "divider.html" . }}
   {{ partial "ristorante.html" . }}
+  {{ partial "divider.html" . }}
   <section style="padding: 2rem; text-align: center;">
     <h1>{{ .Title }}</h1>
     <p>Benvenuto nella versione: {{ .Site.Language.Lang }}</p>
