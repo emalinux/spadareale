@@ -2,7 +2,6 @@ baseURL = "/"
 defaultContentLanguage = "it"
 defaultContentLanguageInSubdir = true
 title = "Spada Reale"
-theme = ""
 
 [languages]
   [languages.it]

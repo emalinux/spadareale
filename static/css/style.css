@@ -1,6 +1,10 @@
 /* =======================
    🌐 BASE
 ======================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -348,6 +352,9 @@ footer {
   color: #333;
 }
 
+/* =======================
+    🛡️ DIVISORE LOGHI
+======================= */
 .section-logo-divider {
   display: flex;
   align-items: center;
@@ -369,4 +376,29 @@ footer {
   background-color: #6a2435;
   border: none;
   opacity: 0.5;
+}
+
+/* =======================
+   ^ TORNA SU
+======================= */
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #6a2435;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1000;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.scroll-top:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
