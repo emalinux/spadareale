@@ -1,14 +1,66 @@
-<section id="camere" class="camere-section">
-    <h2 class="section-title fade-in">Le Camere – Alloggio</h2>
-  
-    <div class="camere-bg">
-      <div class="camere-overlay">
-        <div class="camere-content centered fade-in">
-          <p>Ambienti semplici, spaziosi e silenziosi, immersi nella quiete delle montagne.</p>
-          <p>Ideali per coppie, famiglie o piccoli gruppi, le nostre camere garantiscono un soggiorno rilassante in un’atmosfera autentica.</p>
-          <p>Ogni stanza è dotata di riscaldamento autonomo, biancheria, e vista sulla valle. Il silenzio è il nostro lusso.</p>
-          <a href="/{{ .Site.Language.Lang }}/camere/" class="btn-camere">Scopri le nostre camere</a>
-        </div>
-      </div>
+<section class="section section--titolo-esterno">
+  <h2 class="section-title">Le Camere e l’Appartamento</h2>
+</section>
+
+<section id="camere" class="camere-bg">
+  <div class="camere-overlay">
+    <div class="camere-content centered fade-in">
+
+      {{ if eq .Site.Language.Lang "it" }}
+        <p>
+          Lo Spada Reale offre diverse tipologie di camere per soddisfare le esigenze dei nostri ospiti:<br>
+          • Camere piccole e confortevoli, ideali per chi viaggia da solo.<br>
+          • Camere matrimoniali.
+        </p>
+
+        <p>Tutte le nostre camere dispongono di un bagno interno, piccolo ma privato.</p>
+
+        <p>
+          Per soggiorni più lunghi, è disponibile l’appartamento vacanze Spada Reale, dotato di
+          due camere da letto, un bagno, un’ampia cucina e un soggiorno.
+        </p>
+
+        <p>I prezzi variano in base al periodo scelto e alla modalità di soggiorno.</p>
+
+        <a href="/it/camere/" class="btn-camere">Scopri di più</a>
+
+      {{ else if eq .Site.Language.Lang "en" }}
+        <p>
+          Spada Reale offers different types of rooms to meet the needs of our guests:<br>
+          • Small and cozy rooms, ideal for solo travelers.<br>
+          • Double rooms.
+        </p>
+
+        <p>All our rooms have a private internal bathroom, small but functional.</p>
+
+        <p>
+          For longer stays, the Spada Reale holiday apartment is available, featuring two bedrooms, a bathroom,
+          a spacious kitchen, and a living room.
+        </p>
+
+        <p>Prices vary depending on the period and type of stay.</p>
+
+        <a href="/en/rooms/" class="btn-camere">Discover more</a>
+
+      {{ else if eq .Site.Language.Lang "fr" }}
+        <p>
+          Le Spada Reale propose différents types de chambres pour répondre aux besoins de nos hôtes :<br>
+          • Chambres petites et confortables, idéales pour les voyageurs seuls.<br>
+          • Chambres doubles.
+        </p>
+
+        <p>Toutes nos chambres disposent d’une salle de bain privative, petite mais fonctionnelle.</p>
+
+        <p>
+          Pour les séjours plus longs, l’appartement de vacances Spada Reale est disponible, avec deux chambres,
+          une salle de bain, une grande cuisine et un salon.
+        </p>
+
+        <p>Les prix varient selon la période choisie et le type de séjour.</p>
+
+        <a href="/fr/chambres/" class="btn-camere">En savoir plus</a>
+
+      {{ end }}
     </div>
-  </section>
+  </div>
+</section>

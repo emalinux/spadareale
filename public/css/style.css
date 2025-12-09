@@ -444,18 +444,17 @@ footer {
 }
 
 .btn-camere {
-  margin-top: 2rem;
   background-color: #fff;
   color: #6a2435;
-  padding: 0.8rem 1.6rem;
-  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  margin-top: 2rem; /* ← aumento margine sopra */
 }
 .btn-camere:hover {
-  background-color: #f4f4f4;
-  color: #92293f;
+  background-color: #f0f0f0;
 }
 
 .section-title {
@@ -477,7 +476,7 @@ footer {
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
 .fade-in.visible {
