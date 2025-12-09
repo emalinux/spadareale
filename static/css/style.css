@@ -402,3 +402,85 @@ footer {
   opacity: 1;
   transform: scale(1.1);
 }
+
+/* =======================
+   🛏️ CAMERE CON SFONDO
+======================= */
+.camere-bg {
+  background: url('/img/hero-camere.jpg') center center / cover no-repeat;
+  position: relative;
+  min-height: 600px; /* oppure min-height: 600px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camere-overlay {
+  background-color: rgba(106, 36, 53, 0.8); /* #6a2435 con opacità */
+  width: 100%;
+  height: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camere-content {
+  color: white;
+  max-width: 800px;
+  text-align: center;
+}
+
+.camere-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.camere-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.btn-camere {
+  margin-top: 2rem;
+  background-color: #fff;
+  color: #6a2435;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-camere:hover {
+  background-color: #f4f4f4;
+  color: #92293f;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #6a2435;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  border-bottom: 4px solid #6a2435;
+  display: inline-block;
+}
+
+.camere-section {
+  padding: 4rem 2rem;
+}
+
+/* =======================
+   ✨ FADE-IN SCROLL
+======================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
