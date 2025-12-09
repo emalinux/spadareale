@@ -446,12 +446,12 @@ footer {
 .btn-camere {
   background-color: #fff;
   color: #6a2435;
-  padding: 0.6rem 1.2rem;
+  padding: 0.2rem 1.9rem;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
-  margin-top: 2rem; /* ← aumento margine sopra */
+  margin-top: -2rem; /* ← aumento margine sopra */
 }
 .btn-camere:hover {
   background-color: #f0f0f0;
@@ -482,4 +482,66 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* =======================
+   ^ BOTTEGA CARDS
+======================= */
+.bottega-section {
+  padding: 4rem 2rem;
+}
+
+.section-title-left {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #5a1d2d;
+  font-weight: bold;
+}
+
+.bottega-intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottega-text {
+  flex: 1 1 60%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bottega-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.bottega-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.bottega-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.bottega-card:hover {
+  transform: translateY(-5px);
+}
+
+.bottega-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
