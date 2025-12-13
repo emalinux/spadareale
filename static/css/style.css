@@ -488,39 +488,51 @@ footer {
    ^ BOTTEGA CARDS
 ======================= */
 .bottega-section {
-  padding: 4rem 2rem;
+  padding: 1rem 2rem 4rem;
 }
 
-.section-title-left {
-  text-align: left;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #5a1d2d;
+.section-title {
+  font-size: 2.5rem;
+  color: #6a2435;
+  margin-bottom: 1.5rem;
   font-weight: bold;
+  border-bottom: 4px solid #6a2435;
+  display: inline-block;
+  text-align: left;
 }
 
-.bottega-intro-wrapper {
+/* wrapper immagine + testo */
+.bottega-intro-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .bottega-text {
   flex: 1 1 60%;
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
-.bottega-image img {
+.bottega-img {
+  flex: 1 1 35%;
+  max-width: 400px;
+}
+
+.bottega-img img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* griglia card prodotti */
 .bottega-grid {
   margin-top: 3rem;
   display: grid;
@@ -544,4 +556,8 @@ footer {
 .bottega-icon {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+
+#bottega .section-title {
+  margin-bottom: 3.8rem;
 }
