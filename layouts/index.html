@@ -7,10 +7,9 @@
   {{ partial "camere.html" . }}
   {{ partial "divider.html" . }}
   {{ partial "bottega.html" . }}
-  <section style="padding: 2rem; text-align: center;">
-    <h1>{{ .Title }}</h1>
-    <p>Benvenuto nella versione: {{ .Site.Language.Lang }}</p>
-  </section>
+  {{ partial "divider.html" . }}
+
+  <script src="/js/main.js"></script>
 
   <!-- Fuori da qualsiasi sezione per fluttuare ovunque -->
   <a href="#" class="scroll-top" title="Torna su">↑</a>

@@ -342,14 +342,39 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
 }
 
 /* =======================
-   🦶 FOOTER
+   ⚖️ FOOTER SNELLO A TRE COLONNE
 ======================= */
-footer {
-  background: #eee;
-  padding: 1rem;
+.footer-slim-duo {
+  background-color: #6a2435;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-slim-duo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
   text-align: center;
-  font-size: 0.9rem;
-  color: #333;
+}
+
+.footer-logo-col img {
+  width: 250px;
+  height: auto;
+}
+
+.footer-info-col p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-info-col a {
+  color: #fcd9e0;
+  text-decoration: underline;
 }
 
 /* =======================
