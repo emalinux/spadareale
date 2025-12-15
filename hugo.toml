@@ -15,3 +15,5 @@ title = "Spada Reale"
   [languages.fr]
     languageName = "Français"
     weight = 3
+
+disableKinds = ["taxonomy", "term"]

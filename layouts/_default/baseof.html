@@ -12,6 +12,12 @@
   <!-- Tutto il contenuto boxato -->
   <div class="boxed-layout">
 
+    {{ if eq .Kind "home" }}
+      {{ partial "header.html" . }}
+    {{ else }}
+      {{ partial "header-interno.html" . }}
+    {{ end }}
+
     <main>
       {{ block "main" . }}{{ end }}
     </main>

@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/it/it/</loc>
+  </url><url>
+    <loc>//localhost:1313/it/fr/boutique/</loc>
+  </url><url>
+    <loc>//localhost:1313/it/it/camere/</loc>
+  </url><url>
     <loc>//localhost:1313/it/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -10,20 +16,47 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="//localhost:1313/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it"
                 href="//localhost:1313/it/categories/"
                 />
   </url><url>
+    <loc>//localhost:1313/it/fr/chambres/</loc>
+  </url><url>
+    <loc>//localhost:1313/it/contatti/</loc>
+  </url><url>
     <loc>//localhost:1313/it/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="//localhost:1313/it/en/"
+                />
   </url><url>
     <loc>//localhost:1313/it/fr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="//localhost:1313/it/fr/"
+                />
   </url><url>
-    <loc>//localhost:1313/it/it/</loc>
+    <loc>//localhost:1313/it/it/bottega/</loc>
+  </url><url>
+    <loc>//localhost:1313/it/fr/restaurant/</loc>
+  </url><url>
+    <loc>//localhost:1313/it/it/ristorante/</loc>
+  </url><url>
+    <loc>//localhost:1313/it/en/rooms/</loc>
+  </url><url>
+    <loc>//localhost:1313/it/en/shop/</loc>
   </url><url>
     <loc>//localhost:1313/it/</loc>
     <xhtml:link
@@ -50,13 +83,10 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="//localhost:1313/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it"
                 href="//localhost:1313/it/tags/"
                 />
+  </url><url>
+    <loc>//localhost:1313/it/en/restaurant/</loc>
   </url>
 </urlset>

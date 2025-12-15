@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>📍 Via Barale 11, 12010 Roaschia (CN)</p>
+        <p>📞 +39 342 1228735</p>
+        <p>📧 <a href="mailto:spadareale@yahoo.it">spadareale@yahoo.it</a></p>
+        <p>🧭 
+          {{ if eq .Site.Language.Lang "it" }}10 km da Cuneo, 7 km dalla stazione FS, aeroporto a 30 km{{ end }}
+          {{ if eq .Site.Language.Lang "en" }}10 km from Cuneo, 7 km from the train station, 30 km from the airport{{ end }}
+          {{ if eq .Site.Language.Lang "fr" }}10 km de Coni, 7 km de la gare, 30 km de l'aéroport{{ end }}
+        </p>
+      </div>
+
+      <div class="contact-form">
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="text" name="name" placeholder="Nome / Name / Nom" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="5" placeholder="Messaggio / Message / Message" required></textarea>
+          <button type="submit">
+            {{ if eq .Site.Language.Lang "it" }}Prenota o invia messaggio{{ end }}
+            {{ if eq .Site.Language.Lang "en" }}Book or Send message{{ end }}
+            {{ if eq .Site.Language.Lang "fr" }}Réserver ou envoyer un message{{ end }}
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact-map">
+      <iframe
+        src="https://maps.google.com/maps?q=Via%20Barale%2011,%20Roaschia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" style="border:0; width:100%; height:400px" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+{{ end }}
