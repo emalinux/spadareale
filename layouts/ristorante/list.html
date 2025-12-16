@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<section class="section section--ristorante">
+
+  <!-- SLIDER -->
+  <div class="ristorante-slider">
+    <div class="slide"><img src="/img/risto/slide1.jpg" alt="Ristorante Spada Reale - Interni 1"></div>
+    <div class="slide"><img src="/img/risto/slide2.jpg" alt="Ristorante Spada Reale - Interni 2"></div>
+    <div class="slide"><img src="/img/risto/slide3.jpg" alt="Ristorante Spada Reale - Interni 3"></div>
+  </div>
+
+  <!-- TESTO FORMATATO -->
+  <div class="ristorante-text fade-in">
+    <h2>{{ .Title }}</h2>
+    <div class="testo-giustificato">
+      {{ .Content }}
+    </div>
+  </div>
+
+</section>
+
+{{ end }}

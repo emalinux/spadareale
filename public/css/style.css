@@ -659,3 +659,36 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
   font-size: 1rem;
   font-weight: 400;
 }
+
+/* =======================
+🍝 RISTORANTE SLIDER
+======================= */
+
+.ristorante-slider {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+  max-width: 90%;
+  margin: 0 auto 3rem;
+}
+
+.ristorante-slider .slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.ristorante-text {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.testo-giustificato {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+}

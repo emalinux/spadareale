@@ -8,18 +8,6 @@
   </url><url>
     <loc>//localhost:1313/it/it/camere/</loc>
   </url><url>
-    <loc>//localhost:1313/it/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="//localhost:1313/it/categories/"
-                />
-  </url><url>
     <loc>//localhost:1313/it/fr/chambres/</loc>
   </url><url>
     <loc>//localhost:1313/it/contatti/</loc>
@@ -48,11 +36,11 @@
                 href="//localhost:1313/it/fr/"
                 />
   </url><url>
+    <loc>//localhost:1313/it/it/ristorante/</loc>
+  </url><url>
     <loc>//localhost:1313/it/it/bottega/</loc>
   </url><url>
     <loc>//localhost:1313/it/fr/restaurant/</loc>
-  </url><url>
-    <loc>//localhost:1313/it/it/ristorante/</loc>
   </url><url>
     <loc>//localhost:1313/it/en/rooms/</loc>
   </url><url>
@@ -73,18 +61,6 @@
                 rel="alternate"
                 hreflang="it"
                 href="//localhost:1313/it/"
-                />
-  </url><url>
-    <loc>//localhost:1313/it/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="//localhost:1313/it/tags/"
                 />
   </url><url>
     <loc>//localhost:1313/it/en/restaurant/</loc>

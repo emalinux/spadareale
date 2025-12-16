@@ -3,17 +3,20 @@ defaultContentLanguage = "it"
 defaultContentLanguageInSubdir = true
 title = "Spada Reale"
 
+disableKinds = ["taxonomy", "term"]
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]
+
 [languages]
   [languages.it]
     languageName = "Italiano"
     weight = 1
-
   [languages.en]
     languageName = "English"
     weight = 2
-
   [languages.fr]
     languageName = "Français"
     weight = 3
-
-disableKinds = ["taxonomy", "term"]
