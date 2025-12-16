@@ -1,5 +1,7 @@
 ---
 title: "Il Ristorante"
+type: "ristorante"
+url: /it/ristorante/
 description: "Cucina piemontese e ospitalità di montagna – Spada Reale"
 ---
 

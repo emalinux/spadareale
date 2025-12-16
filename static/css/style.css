@@ -664,31 +664,34 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
 🍝 RISTORANTE SLIDER
 ======================= */
 
+/* Slideshow semplice */
 .ristorante-slider {
-  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
   overflow: hidden;
-  gap: 1rem;
-  max-width: 90%;
-  margin: 0 auto 3rem;
+  border-radius: 12px;
+}
+
+.ristorante-slider .slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .ristorante-slider .slide img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: block;
+  object-fit: cover;
 }
 
-.ristorante-text {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  text-align: center;
-}
-
-.testo-giustificato {
-  text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-top: 1rem;
+/* Mostra solo la slide attiva */
+.ristorante-slider .slide.active {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
 }
