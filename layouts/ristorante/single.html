@@ -1,5 +1,14 @@
 {{ define "main" }}
 
+<!-- TITOLO ALTO IN STILE -->
+<section class="section section--titolo-esterno">
+  <h2 class="section-title">
+    {{ if eq .Site.Language.Lang "it" }}🍷 Il Ristorante{{ end }}
+    {{ if eq .Site.Language.Lang "en" }}🍷 The Restaurant{{ end }}
+    {{ if eq .Site.Language.Lang "fr" }}🍷 Le Restaurant{{ end }}
+  </h2>
+</section>
+
 <section class="section section--ristorante">
 
   <!-- SLIDER -->
@@ -11,9 +20,54 @@
 
   <!-- TESTO FORMATATO -->
   <div class="ristorante-text fade-in">
-    <h2>{{ .Title }}</h2>
-    <div class="testo-giustificato">
-      {{ .Content }}
+    <div class="ristorante-wrapper">
+
+      <div class="testo-giustificato">
+        {{ .Content }}
+      
+        {{ if eq .Site.Language.Lang "it" }}
+          <p>
+            Ogni piatto viene preparato con amore e passione, combinando la tradizione piemontese con un tocco creativo.
+            La nostra cucina è semplice, genuina e profondamente legata al territorio.
+          </p>
+          <p>
+            Accogliamo i nostri ospiti in un ambiente rustico ma curato, dove il calore del camino e l’aroma dei piatti appena sfornati
+            creano un’atmosfera familiare e indimenticabile.
+          </p>
+          <p>👉 <strong><a href="/it/contatti/">Si consiglia di prenotare</a></strong> per assicurarsi un tavolo disponibile e ricevere il miglior servizio possibile.</p>
+        {{ else if eq .Site.Language.Lang "en" }}
+          <p>
+            Each dish is prepared with love and passion, blending traditional Piedmontese cuisine with a creative twist.
+            Our cooking is simple, genuine, and deeply rooted in the territory.
+          </p>
+          <p>
+            We welcome our guests in a cozy, rustic setting, where the warmth of the fireplace and the aroma of freshly cooked meals
+            create a homely and unforgettable atmosphere.
+          </p>
+          <p>👉 <strong><a href="/en/contact/">We strongly recommend booking</a></strong> to ensure a table and the best possible service.</p>
+        {{ else if eq .Site.Language.Lang "fr" }}
+          <p>
+            Chaque plat est préparé avec amour et passion, en combinant la cuisine piémontaise traditionnelle avec une touche de créativité.
+            Notre cuisine est simple, authentique et profondément liée au territoire.
+          </p>
+          <p>
+            Nous accueillons nos hôtes dans une atmosphère rustique mais soignée, où la chaleur de la cheminée et l’arôme des plats
+            fraîchement cuisinés créent une ambiance familiale et inoubliable.
+          </p>
+          <p>👉 <strong><a href="/fr/contact/">Il est fortement conseillé de réserver</a></strong> afin de garantir une table et d’assurer le meilleur service possible.</p>
+        {{ end }}
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-prenota">
+        <a href="{{ if eq .Site.Language.Lang "it" }}/it/contatti/{{ else if eq .Site.Language.Lang "en" }}/en/contact/{{ else }}/fr/contactez/{{ end }}" class="btn-prenota">
+          📅
+          {{ if eq .Site.Language.Lang "it" }}Prenota ora{{ end }}
+          {{ if eq .Site.Language.Lang "en" }}Book now{{ end }}
+          {{ if eq .Site.Language.Lang "fr" }}Réserver maintenant{{ end }}
+        </a>
+      </div>
+
     </div>
   </div>
 

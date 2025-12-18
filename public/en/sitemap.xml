@@ -18,6 +18,8 @@
   </url><url>
     <loc>//localhost:1313/en/restaurant/</loc>
   </url><url>
+    <loc>//localhost:1313/en/rooms/</loc>
+  </url><url>
     <loc>//localhost:1313/en/</loc>
     <xhtml:link
                 rel="alternate"
