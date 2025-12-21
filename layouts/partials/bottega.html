@@ -10,46 +10,7 @@
 </section>
 
 <section id="bottega" class="bottega-section">
-<<<<<<< HEAD
-  <div class="bottega-intro-wrapper fade-in">
-    <div class="bottega-text">
-      <h2 class="section-title">🛍️ Piccola Bottega – Prodotti</h2>
-      <p>
-        Accanto alla struttura principale, al civico n°5, si trova la Piccola Bottega Spada Reale. 
-        Qui potrete trovare prodotti di prima necessità per la casa e per le vacanze, 
-        delizie culinarie per i palati più golosi, piccoli e originali souvenir e molto altro!
-      </p>
-      <p>
-        Scopri i nostri prodotti artigianali, perfetti per un ricordo gustoso o un dono speciale!
-      </p>
-    </div>
-    <div class="bottega-img">
-      <img src="/img/bottega.jpg" alt="Ingresso Piccola Bottega Spada Reale" />
-    </div>
-  </div>
 
-  <div class="bottega-grid fade-in">
-    <div class="bottega-card">
-      <div class="bottega-icon">🧀</div>
-      <h3>Formaggi Locali</h3>
-      <p>Selezione di formaggi piemontesi stagionati, freschi e a latte crudo.</p>
-    </div>
-    <div class="bottega-card">
-      <div class="bottega-icon">🍝</div>
-      <h3>Pasta Fresca</h3>
-      <p>Tagliolini, agnolotti e ravioli preparati con farine locali e uova fresche.</p>
-    </div>
-    <div class="bottega-card">
-      <div class="bottega-icon">🍯</div>
-      <h3>Marmellate & Miele</h3>
-      <p>Conservati artigianali prodotti con frutta di stagione e miele d’alta quota.</p>
-    </div>
-    <div class="bottega-card">
-      <div class="bottega-icon">🎁</div>
-      <h3>Souvenir</h3>
-      <p>Oggetti tipici, calamite, candele e piccoli pensieri da portare a casa.</p>
-    </div>
-=======
   <div class="bottega-intro-container fade-in">
 
     <!-- IMMAGINE -->
@@ -61,82 +22,24 @@
     <div class="bottega-text">
 
       {{ if eq .Site.Language.Lang "it" }}
-
         <p>
           Accanto alla struttura principale, al civico n°5, si trova la Piccola Bottega Spada Reale.
           Qui potrete trovare prodotti di prima necessità per la casa e per le vacanze,
           delizie culinarie per i palati più golosi, piccoli e originali souvenir e molto altro!
         </p>
-
         <p>
           Scopri i nostri prodotti artigianali, perfetti per un ricordo gustoso o un dono speciale!
         </p>
-
-        <p>
-          Ogni articolo è stato selezionato con cura per valorizzare il territorio e offrire qualità ai nostri ospiti.
-          Crediamo che anche un piccolo dono possa racchiudere l’anima del luogo e lasciare un ricordo indelebile.
-          Che si tratti di un formaggio stagionato, un barattolo di miele o una calamita fatta a mano,
-          ogni oggetto racconta una storia, fatta di tradizioni, profumi e persone.
-        </p>
-
-        <p>
-          La Piccola Bottega è più di un semplice negozio: è un angolo autentico di cultura locale,
-          dove la semplicità incontra il gusto. Venite a curiosare tra gli scaffali,
-          lasciatevi tentare da sapori genuini e portate con voi un pezzetto di Spada Reale.
-        </p>
-
       {{ else if eq .Site.Language.Lang "en" }}
-
         <p>
           Next to the main building, at number 5, you will find the Spada Reale Small Shop.
-          Here you can find essential goods for your home or holiday,
-          culinary delights for the most refined palates, original souvenirs, and much more.
+          Essential goods, culinary delights and original souvenirs await you.
         </p>
-
-        <p>
-          Discover our handmade local products, perfect as a tasteful souvenir or a special gift.
-        </p>
-
-        <p>
-          Each item is carefully selected to enhance the territory and offer quality to our guests.
-          We believe that even a small gift can capture the soul of a place and leave a lasting memory.
-          Whether it is aged cheese, a jar of mountain honey or a handmade souvenir,
-          every product tells a story of traditions, scents and people.
-        </p>
-
-        <p>
-          The Small Shop is more than just a store: it is a cozy corner of local culture,
-          where simplicity meets flavor. Browse the shelves,
-          be tempted by genuine products and take a piece of Spada Reale home with you.
-        </p>
-
       {{ else if eq .Site.Language.Lang "fr" }}
-
         <p>
-          À côté du bâtiment principal, au numéro 5, se trouve la Petite Boutique Spada Reale.
-          Vous y trouverez des produits essentiels pour la maison ou les vacances,
-          des délices culinaires pour les palais les plus gourmands,
-          des souvenirs originaux et bien plus encore.
+          À côté du bâtiment principal, au numéro 5, se trouve la Petite Boutique Spada Reale,
+          avec des produits locaux et des souvenirs authentiques.
         </p>
-
-        <p>
-          Découvrez nos produits artisanaux, parfaits comme souvenir gourmand ou cadeau spécial.
-        </p>
-
-        <p>
-          Chaque article est soigneusement sélectionné pour valoriser le territoire et offrir de la qualité à nos hôtes.
-          Nous pensons que même un petit cadeau peut capturer l’âme d’un lieu et laisser un souvenir inoubliable.
-          Qu’il s’agisse d’un fromage affiné, d’un pot de miel de montagne ou d’un souvenir fait main,
-          chaque objet raconte une histoire de traditions, de parfums et de personnes.
-        </p>
-
-        <p>
-          La Petite Boutique est bien plus qu’un simple magasin :
-          c’est un coin authentique de culture locale où la simplicité rencontre le goût.
-          Flânez entre les étagères, laissez-vous tenter par des saveurs authentiques
-          et emportez avec vous un petit morceau de Spada Reale.
-        </p>
-
       {{ end }}
 
     </div>
@@ -147,68 +50,27 @@
 
     <div class="bottega-card">
       <div class="bottega-icon">🧀</div>
-      <h3>
-        {{ if eq .Site.Language.Lang "it" }}Formaggi Locali
-        {{ else if eq .Site.Language.Lang "en" }}Local Cheeses
-        {{ else if eq .Site.Language.Lang "fr" }}Fromages Locaux
-        {{ end }}
-      </h3>
-      <p>
-        {{ if eq .Site.Language.Lang "it" }}Selezione di formaggi piemontesi stagionati, freschi e a latte crudo.
-        {{ else if eq .Site.Language.Lang "en" }}Selection of aged and fresh local cheeses made with raw milk.
-        {{ else if eq .Site.Language.Lang "fr" }}Sélection de fromages locaux affinés, frais et au lait cru.
-        {{ end }}
-      </p>
+      <h3>{{ if eq .Site.Language.Lang "it" }}Formaggi Locali{{ else if eq .Site.Language.Lang "en" }}Local Cheeses{{ else }}Fromages Locaux{{ end }}</h3>
+      <p> {{ if eq .Site.Language.Lang "it" }}Selezione di formaggi piemontesi stagionati e freschi.{{ else if eq .Site.Language.Lang "en" }}Selection of aged and fresh local cheeses.{{ else }}Sélection de fromages locaux.{{ end }}</p>
     </div>
 
     <div class="bottega-card">
       <div class="bottega-icon">🍝</div>
-      <h3>
-        {{ if eq .Site.Language.Lang "it" }}Pasta Fresca
-        {{ else if eq .Site.Language.Lang "en" }}Fresh Pasta
-        {{ else if eq .Site.Language.Lang "fr" }}Pâtes Fraîches
-        {{ end }}
-      </h3>
-      <p>
-        {{ if eq .Site.Language.Lang "it" }}Tagliolini, agnolotti e ravioli preparati con farine locali e uova fresche.
-        {{ else if eq .Site.Language.Lang "en" }}Tagliolini, agnolotti and ravioli made with local flour and fresh eggs.
-        {{ else if eq .Site.Language.Lang "fr" }}Tagliolini, agnolotti et raviolis préparés avec des farines locales et des œufs frais.
-        {{ end }}
-      </p>
+      <h3>{{ if eq .Site.Language.Lang "it" }}Pasta Fresca{{ else if eq .Site.Language.Lang "en" }}Fresh Pasta{{ else }}Pâtes Fraîches{{ end }}</h3>
+      <p>{{ if eq .Site.Language.Lang "it" }}Pasta artigianale con ingredienti locali.{{ else if eq .Site.Language.Lang "en" }}Handmade pasta with local ingredients.{{ else }}Pâtes artisanales aux ingrédients locaux.{{ end }}</p>
     </div>
 
     <div class="bottega-card">
       <div class="bottega-icon">🍯</div>
-      <h3>
-        {{ if eq .Site.Language.Lang "it" }}Marmellate & Miele
-        {{ else if eq .Site.Language.Lang "en" }}Jams & Honey
-        {{ else if eq .Site.Language.Lang "fr" }}Confitures & Miel
-        {{ end }}
-      </h3>
-      <p>
-        {{ if eq .Site.Language.Lang "it" }}Conservati artigianali con frutta di stagione e miele d’alta quota.
-        {{ else if eq .Site.Language.Lang "en" }}Handmade preserves made with seasonal fruit and mountain honey.
-        {{ else if eq .Site.Language.Lang "fr" }}Conserves artisanales à base de fruits de saison et de miel de montagne.
-        {{ end }}
-      </p>
+      <h3>{{ if eq .Site.Language.Lang "it" }}Marmellate & Miele{{ else if eq .Site.Language.Lang "en" }}Jams & Honey{{ else }}Confitures & Miel{{ end }}</h3>
+      <p>{{ if eq .Site.Language.Lang "it" }}Conservati artigianali e miele di montagna.{{ else if eq .Site.Language.Lang "en" }}Homemade preserves and mountain honey.{{ else }}Confitures artisanales et miel de montagne.{{ end }}</p>
     </div>
 
     <div class="bottega-card">
       <div class="bottega-icon">🎁</div>
-      <h3>
-        {{ if eq .Site.Language.Lang "it" }}Souvenir
-        {{ else if eq .Site.Language.Lang "en" }}Souvenirs
-        {{ else if eq .Site.Language.Lang "fr" }}Souvenirs
-        {{ end }}
-      </h3>
-      <p>
-        {{ if eq .Site.Language.Lang "it" }}Oggetti tipici, calamite, candele e piccoli pensieri da portare a casa.
-        {{ else if eq .Site.Language.Lang "en" }}Typical items, magnets, candles and small gifts to take home.
-        {{ else if eq .Site.Language.Lang "fr" }}Objets typiques, aimants, bougies et petits souvenirs à emporter.
-        {{ end }}
-      </p>
+      <h3>{{ if eq .Site.Language.Lang "it" }}Souvenir{{ else if eq .Site.Language.Lang "en" }}Souvenirs{{ else }}Souvenirs{{ end }}</h3>
+      <p>{{ if eq .Site.Language.Lang "it" }}Piccoli oggetti e ricordi tipici.{{ else if eq .Site.Language.Lang "en" }}Small typical gifts and memories.{{ else }}Petits souvenirs typiques.{{ end }}</p>
     </div>
 
->>>>>>> recupero-camere
   </div>
 </section>
