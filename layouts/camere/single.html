@@ -9,20 +9,36 @@
 </section>
 
 <section class="section section--camere">
-
   <div class="camere-wrapper">
 
     <!-- BLOCCO 1: IMG SX, TESTO DX -->
     <div class="camere-blocco">
       <div class="img img-sx">
-        <img src="/img/camere/camera1.webp" alt="Camera matrimoniale">
+        <img src="/img/camere/camera1.webp" alt="Camere matrimoniali">
       </div>
       <div class="testo testo-dx">
-        <h3>{{ if eq .Site.Language.Lang "it" }}Camera matrimoniale{{ else if eq .Site.Language.Lang "en" }}Double room{{ else }}Chambre double{{ end }}</h3>
+        <h3>
+          {{ if eq .Site.Language.Lang "it" }}🛏️ Camere matrimoniali
+          {{ else if eq .Site.Language.Lang "en" }}🛏️ Double rooms
+          {{ else }}🛏️ Chambres doubles{{ end }}
+        </h3>
         <p>
-          {{ if eq .Site.Language.Lang "it" }}Accogliente camera con vista sulle montagne. Letto matrimoniale, bagno privato, arredi in legno.{{ end }}
-          {{ if eq .Site.Language.Lang "en" }}Cozy room with mountain view. Double bed, private bathroom, wooden furniture.{{ end }}
-          {{ if eq .Site.Language.Lang "fr" }}Chambre confortable avec vue sur la montagne. Lit double, salle de bain privée, mobilier en bois.{{ end }}
+          {{ if eq .Site.Language.Lang "it" }}
+          Le camere matrimoniali dello <strong>Spada Reale</strong> accolgono gli ospiti in un ambiente caldo e intimo, con vista mozzafiato sulle montagne circostanti. Ogni stanza è arredata con elementi in legno naturale, combinando comfort e stile rustico alpino.
+          {{ else if eq .Site.Language.Lang "en" }}
+          The double rooms at <strong>Spada Reale</strong> welcome guests into a warm and intimate atmosphere, with breathtaking views of the surrounding mountains. Each room is furnished with natural wood elements, blending comfort and rustic alpine charm.
+          {{ else }}
+          Les chambres doubles du <strong>Spada Reale</strong> accueillent les hôtes dans une ambiance chaleureuse et intime, avec une vue imprenable sur les montagnes environnantes. Chaque chambre est décorée avec des éléments en bois naturel, alliant confort et charme alpin rustique.
+          {{ end }}
+        </p>
+        <p>
+          {{ if eq .Site.Language.Lang "it" }}
+          Ogni camera dispone di <strong>bagno privato</strong>, biancheria soffice e angoli pensati per il relax. Ideali per coppie in cerca di tranquillità e autenticità.
+          {{ else if eq .Site.Language.Lang "en" }}
+          Each room has a <strong>private bathroom</strong>, soft linen, and cozy corners designed for relaxation. Ideal for couples looking for peace and authenticity.
+          {{ else }}
+          Chaque chambre dispose d’une <strong>salle de bain privée</strong>, de linge doux et de coins confortables pour se détendre. Idéal pour les couples en quête de tranquillité et d’authenticité.
+          {{ end }}
         </p>
       </div>
     </div>
@@ -30,11 +46,28 @@
     <!-- BLOCCO 2: TESTO SX, IMG DX -->
     <div class="camere-blocco reverse">
       <div class="testo testo-sx">
-        <h3>{{ if eq .Site.Language.Lang "it" }}Appartamento familiare{{ else if eq .Site.Language.Lang "en" }}Family apartment{{ else }}Appartement familial{{ end }}</h3>
+        <h3>
+          {{ if eq .Site.Language.Lang "it" }}🏡 Appartamento familiare
+          {{ else if eq .Site.Language.Lang "en" }}🏡 Family apartment
+          {{ else }}🏡 Appartement familial{{ end }}
+        </h3>
         <p>
-          {{ if eq .Site.Language.Lang "it" }}Spazioso appartamento con cucina, due camere e terrazzo. Ideale per famiglie.{{ end }}
-          {{ if eq .Site.Language.Lang "en" }}Spacious apartment with kitchen, two bedrooms and terrace. Perfect for families.{{ end }}
-          {{ if eq .Site.Language.Lang "fr" }}Appartement spacieux avec cuisine, deux chambres et terrasse. Parfait pour les familles.{{ end }}
+          {{ if eq .Site.Language.Lang "it" }}
+          Il nostro appartamento è perfetto per <strong>famiglie o gruppi di amici</strong>. Dispone di due camere da letto separate, cucina attrezzata, bagno moderno e un ampio terrazzo panoramico.
+          {{ else if eq .Site.Language.Lang "en" }}
+          Our apartment is perfect for <strong>families or groups of friends</strong>. It features two separate bedrooms, a fully equipped kitchen, a modern bathroom, and a spacious panoramic terrace.
+          {{ else }}
+          Notre appartement est idéal pour les <strong>familles ou les groupes d’amis</strong>. Il comprend deux chambres séparées, une cuisine entièrement équipée, une salle de bain moderne et une grande terrasse panoramique.
+          {{ end }}
+        </p>
+        <p>
+          {{ if eq .Site.Language.Lang "it" }}
+          L’ambiente è luminoso e curato, pensato per offrire <strong>comfort e autonomia</strong> durante il soggiorno. Una soluzione ideale per chi desidera più spazio senza rinunciare al calore dell’accoglienza.
+          {{ else if eq .Site.Language.Lang "en" }}
+          The space is bright and carefully designed to offer <strong>comfort and autonomy</strong> during your stay. It’s the perfect solution for those who need extra room without giving up the warmth of hospitality.
+          {{ else }}
+          L’espace est lumineux et soigné, conçu pour offrir <strong>confort et autonomie</strong> pendant le séjour. C’est la solution idéale pour ceux qui souhaitent plus d’espace sans renoncer à l’accueil chaleureux.
+          {{ end }}
         </p>
       </div>
       <div class="img img-dx">
@@ -45,12 +78,14 @@
     <!-- CTA -->
     <div class="cta-prenota">
       <a href="{{ if eq .Site.Language.Lang "it" }}/it/contatti/{{ else if eq .Site.Language.Lang "en" }}/en/contact/{{ else }}/fr/contactez/{{ end }}" class="btn-prenota">
-        📅 {{ if eq .Site.Language.Lang "it" }}Prenota il tuo soggiorno{{ else if eq .Site.Language.Lang "en" }}Book your stay{{ else }}Réservez votre séjour{{ end }}
+        📅
+        {{ if eq .Site.Language.Lang "it" }}Prenota il tuo soggiorno
+        {{ else if eq .Site.Language.Lang "en" }}Book your stay
+        {{ else }}Réservez votre séjour{{ end }}
       </a>
     </div>
 
   </div>
-
 </section>
 
 {{ end }}

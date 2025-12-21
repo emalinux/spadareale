@@ -408,7 +408,7 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #6a2435;
+  background-color: #c42020;
   color: white;
   padding: 0.6rem 1rem;
   border-radius: 50%;
@@ -484,7 +484,7 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
   color: #6a2435;
   margin-bottom: 1.5rem;
   font-weight: bold;
-  border-bottom: 4px solid #6a2435;
+  border-bottom: 4px solid #c42020;
   display: inline-block;
 }
 
@@ -504,7 +504,7 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
   color: #6a2435;
   margin-bottom: 1.5rem;
   font-weight: bold;
-  border-bottom: 4px solid #6a2435;
+  border-bottom: 4px solid #c42020;
   display: inline-block;
   text-align: left;
 }
@@ -694,4 +694,136 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
   opacity: 1;
   position: relative;
   z-index: 1;
+}
+
+/* =======================
+   🍝 RISTORANTE PAGINA
+======================= */
+
+.section--ristorante {
+  padding: 5rem 2rem;
+  background-color: #fff;
+  color: #222;
+}
+
+.ristorante-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.ristorante-text {
+  margin-top: 3rem;
+}
+
+.testo-giustificato {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.cta-prenota {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-prenota .btn-prenota {
+  display: inline-block;
+  background-color: #6a2435;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-prenota .btn-prenota:hover {
+  background-color: #92293f;
+  transform: scale(1.05);
+}
+
+/* =======================
+   🛏️ CAMERE PAGINA
+======================= */
+
+.section--camere {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #fff 0%, #fdf5f0 100%);
+  color: #222;
+}
+
+.camere-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* layout affiancato desktop */
+@media (min-width: 769px) {
+  .camere-blocco {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .camere-blocco.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .camere-blocco .img,
+  .camere-blocco .testo {
+    flex: 1 1 50%;
+  }
+}
+
+/* layout colonna mobile */
+@media (max-width: 768px) {
+  .camere-blocco,
+  .camere-blocco.reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .camere-blocco .img,
+  .camere-blocco .testo {
+    width: 100%;
+  }
+}
+
+/* immagine */
+.camere-blocco .img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.camere-blocco .img img:hover {
+  transform: scale(1.03);
+}
+
+/* testo */
+.camere-blocco .testo {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.camere-blocco .testo h3 {
+  font-size: 1.4rem;
+  color: #891010;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.camere-blocco .testo p {
+  margin-bottom: 1rem;
+  color: #333;
 }
