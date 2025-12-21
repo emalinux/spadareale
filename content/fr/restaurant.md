@@ -3,7 +3,6 @@ title: "Restaurant"
 type: "ristorante"
 url: /fr/restaurant/
 description: "Cuisine piémontaise et hospitalité de montagne – Spada Reale"
-lang: fr
 ---
 
 Bienvenue dans la salle à manger du **Spada Reale**, où chaque plat raconte l'histoire de nos vallées.

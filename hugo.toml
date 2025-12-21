@@ -11,12 +11,21 @@ disableKinds = ["taxonomy", "term"]
   page = ["HTML"]
 
 [languages]
+
   [languages.it]
     languageName = "Italiano"
+    languageCode = "it-IT"
     weight = 1
+    contentDir = "content/it"
+
   [languages.en]
     languageName = "English"
+    languageCode = "en-GB"
     weight = 2
+    contentDir = "content/en"
+
   [languages.fr]
     languageName = "Français"
+    languageCode = "fr-FR"
     weight = 3
+    contentDir = "content/fr"

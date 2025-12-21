@@ -3,7 +3,6 @@ title: "Restaurant"
 type: "ristorante"
 url: /en/restaurant/
 description: "Piedmont cuisine and mountain hospitality – Spada Reale"
-lang: en
 ---
 
 Welcome to the dining room of **Spada Reale**, where each dish tells a story of our valleys.
