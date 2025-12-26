@@ -11,67 +11,71 @@
 <section class="section section--camere">
   <div class="camere-wrapper">
 
-    <!-- BLOCCO 1: IMG SX, TESTO DX -->
-    <div class="camere-blocco">
-      <div class="img img-sx">
-        <img src="/img/camere/camera1.webp" alt="Camere matrimoniali">
+    <!-- BLOCCO 1: CAMERE MATRIMONIALI -->
+    <div class="blocco blocco-normale">
+      <div class="blocco-img">
+        <img src="/img/camere/camera1.webp" alt="Camere matrimoniali Spada Reale">
       </div>
-      <div class="testo testo-dx">
+      <div class="blocco-testo">
         <h3>
           {{ if eq .Site.Language.Lang "it" }}🛏️ Camere matrimoniali
           {{ else if eq .Site.Language.Lang "en" }}🛏️ Double rooms
           {{ else }}🛏️ Chambres doubles{{ end }}
         </h3>
+
         <p>
           {{ if eq .Site.Language.Lang "it" }}
-          Le camere matrimoniali dello <strong>Spada Reale</strong> accolgono gli ospiti in un ambiente caldo e intimo, con vista mozzafiato sulle montagne circostanti. Ogni stanza è arredata con elementi in legno naturale, combinando comfort e stile rustico alpino.
+          Le camere matrimoniali dello <strong>Spada Reale</strong> offrono un ambiente caldo e accogliente, pensato per chi desidera vivere un soggiorno all’insegna del <strong>relax</strong> e della <strong>tranquillità</strong>.
           {{ else if eq .Site.Language.Lang "en" }}
-          The double rooms at <strong>Spada Reale</strong> welcome guests into a warm and intimate atmosphere, with breathtaking views of the surrounding mountains. Each room is furnished with natural wood elements, blending comfort and rustic alpine charm.
+          The double rooms at <strong>Spada Reale</strong> offer a warm and welcoming atmosphere, designed for guests seeking <strong>relaxation</strong> and <strong>peace</strong>.
           {{ else }}
-          Les chambres doubles du <strong>Spada Reale</strong> accueillent les hôtes dans une ambiance chaleureuse et intime, avec une vue imprenable sur les montagnes environnantes. Chaque chambre est décorée avec des éléments en bois naturel, alliant confort et charme alpin rustique.
+          Les chambres doubles du <strong>Spada Reale</strong> offrent une atmosphère chaleureuse et accueillante, idéale pour un séjour placé sous le signe de la <strong>détente</strong> et de la <strong>tranquillité</strong>.
           {{ end }}
         </p>
+
         <p>
           {{ if eq .Site.Language.Lang "it" }}
-          Ogni camera dispone di <strong>bagno privato</strong>, biancheria soffice e angoli pensati per il relax. Ideali per coppie in cerca di tranquillità e autenticità.
+          Gli interni sono arredati con cura utilizzando <strong>legno naturale</strong> e materiali tradizionali, in perfetta armonia con lo stile alpino. Ogni camera dispone di <strong>bagno privato</strong>, biancheria soffice, connessione Wi‑Fi e spazi pensati per il riposo. Una soluzione ideale per coppie in cerca di intimità e autenticità.
           {{ else if eq .Site.Language.Lang "en" }}
-          Each room has a <strong>private bathroom</strong>, soft linen, and cozy corners designed for relaxation. Ideal for couples looking for peace and authenticity.
+          Interiors are furnished with <strong>natural wood</strong> and traditional materials, perfectly matching the alpine style. Each room features a <strong>private bathroom</strong>, soft linen, Wi‑Fi connection, and thoughtfully designed spaces for rest. Ideal for couples seeking intimacy and authenticity.
           {{ else }}
-          Chaque chambre dispose d’une <strong>salle de bain privée</strong>, de linge doux et de coins confortables pour se détendre. Idéal pour les couples en quête de tranquillité et d’authenticité.
+          Les intérieurs sont aménagés avec soin à l’aide de <strong>bois naturel</strong> et de matériaux traditionnels, en parfaite harmonie avec le style alpin. Chaque chambre dispose d’une <strong>salle de bain privée</strong>, de linge doux, du Wi‑Fi et d’espaces dédiés au repos.
           {{ end }}
         </p>
       </div>
     </div>
 
-    <!-- BLOCCO 2: TESTO SX, IMG DX -->
-    <div class="camere-blocco reverse">
-      <div class="testo testo-sx">
+    <!-- BLOCCO 2: APPARTAMENTO FAMILIARE -->
+    <div class="blocco blocco-invertito">
+      <div class="blocco-img">
+        <img src="/img/camere/camera2.webp" alt="Appartamento familiare Spada Reale">
+      </div>
+      <div class="blocco-testo">
         <h3>
           {{ if eq .Site.Language.Lang "it" }}🏡 Appartamento familiare
           {{ else if eq .Site.Language.Lang "en" }}🏡 Family apartment
           {{ else }}🏡 Appartement familial{{ end }}
         </h3>
+
         <p>
           {{ if eq .Site.Language.Lang "it" }}
-          Il nostro appartamento è perfetto per <strong>famiglie o gruppi di amici</strong>. Dispone di due camere da letto separate, cucina attrezzata, bagno moderno e un ampio terrazzo panoramico.
+          L’appartamento dello <strong>Spada Reale</strong> è la scelta ideale per <strong>famiglie</strong> o <strong>gruppi di amici</strong> che desiderano spazio, autonomia e comfort. Dispone di due camere da letto separate, una <strong>cucina completamente attrezzata</strong>, bagno moderno e un ampio terrazzo panoramico.
           {{ else if eq .Site.Language.Lang "en" }}
-          Our apartment is perfect for <strong>families or groups of friends</strong>. It features two separate bedrooms, a fully equipped kitchen, a modern bathroom, and a spacious panoramic terrace.
+          The apartment at <strong>Spada Reale</strong> is the ideal choice for <strong>families</strong> or <strong>groups of friends</strong> looking for space, independence, and comfort. It includes two separate bedrooms, a <strong>fully equipped kitchen</strong>, a modern bathroom, and a spacious panoramic terrace.
           {{ else }}
-          Notre appartement est idéal pour les <strong>familles ou les groupes d’amis</strong>. Il comprend deux chambres séparées, une cuisine entièrement équipée, une salle de bain moderne et une grande terrasse panoramique.
+          L’appartement du <strong>Spada Reale</strong> est idéal pour les <strong>familles</strong> ou les <strong>groupes d’amis</strong> en quête d’espace, d’autonomie et de confort. Il comprend deux chambres séparées, une <strong>cuisine entièrement équipée</strong>, une salle de bain moderne et une grande terrasse panoramique.
           {{ end }}
         </p>
+
         <p>
           {{ if eq .Site.Language.Lang "it" }}
-          L’ambiente è luminoso e curato, pensato per offrire <strong>comfort e autonomia</strong> durante il soggiorno. Una soluzione ideale per chi desidera più spazio senza rinunciare al calore dell’accoglienza.
+          Gli ambienti sono luminosi, curati nei dettagli e arredati con gusto sobrio e funzionale. L’appartamento garantisce <strong>comfort e privacy</strong> anche per soggiorni più lunghi, senza rinunciare al calore dell’ospitalità tipica della gestione familiare.
           {{ else if eq .Site.Language.Lang "en" }}
-          The space is bright and carefully designed to offer <strong>comfort and autonomy</strong> during your stay. It’s the perfect solution for those who need extra room without giving up the warmth of hospitality.
+          The interiors are bright, carefully designed, and furnished with a clean and functional style. The apartment ensures <strong>comfort and privacy</strong> even for longer stays, without giving up the warmth of family‑run hospitality.
           {{ else }}
-          L’espace est lumineux et soigné, conçu pour offrir <strong>confort et autonomie</strong> pendant le séjour. C’est la solution idéale pour ceux qui souhaitent plus d’espace sans renoncer à l’accueil chaleureux.
+          Les espaces sont lumineux, soignés dans les moindres détails et décorés avec un style sobre et fonctionnel. L’appartement garantit <strong>confort et intimité</strong>, même pour les séjours prolongés.
           {{ end }}
         </p>
-      </div>
-      <div class="img img-dx">
-        <img src="/img/camere/camera2.webp" alt="Appartamento familiare">
       </div>
     </div>
 

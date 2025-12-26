@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ if eq .Type "camere" }}
+    {{ partial "camere-layout.html" . }}
+  {{ else if eq .Type "bottega" }}
+    {{ partial "bottega-layout.html" . }}
+  {{ else }}
+    {{ .Content }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,64 @@
+{{ define "main" }}
+
+<section class="section section--titolo-esterno">
+  <h2 class="section-title">
+    {{ if eq .Site.Language.Lang "it" }}🛍️ La Piccola Bottega{{ end }}
+    {{ if eq .Site.Language.Lang "en" }}🛍️ The Little Shop{{ end }}
+    {{ if eq .Site.Language.Lang "fr" }}🛍️ La Petite Boutique{{ end }}
+  </h2>
+</section>
+
+<section class="section section--bottega">
+  <div class="bottega-wrapper">
+
+    <!-- INTRO: Testo a sinistra, immagine a destra -->
+    <div class="bottega-intro">
+      <div class="bottega-text">
+        {{ if eq .Site.Language.Lang "it" }}
+          <p><strong>La Piccola Bottega</strong> dello Spada Reale si trova accanto all’albergo ed è un punto di riferimento per abitanti e ospiti. Piccola, ma con tutto il necessario!</p>
+          <p>Pane fresco, prodotti tipici, articoli per la casa, souvenir e tante altre specialità locali ti aspettano in un ambiente semplice e familiare.</p>
+        {{ else if eq .Site.Language.Lang "en" }}
+          <p><strong>The Little Shop</strong> of Spada Reale is located right next to the hotel and serves as a reference point for guests and locals. Small, but full of everything you need!</p>
+          <p>Fresh bread, typical products, home supplies, souvenirs and many other local specialties await you in a simple and friendly setting.</p>
+        {{ else if eq .Site.Language.Lang "fr" }}
+          <p><strong>La Petite Boutique</strong> du Spada Reale se trouve à côté de l’hôtel et constitue un point de repère pour les habitants et les visiteurs. Petite, mais avec tout ce qu’il faut !</p>
+          <p>Pain frais, produits typiques, articles ménagers, souvenirs et bien d’autres spécialités locales vous attendent dans un cadre simple et chaleureux.</p>
+        {{ end }}
+      </div>
+      <div class="bottega-img">
+        <img src="/img/bottega.jpg" alt="Ingresso Piccola Bottega Spada Reale">
+      </div>
+    </div>
+
+    <!-- CARD PRODOTTI BOTTEGA -->
+    <div class="bottega-cards">
+      <div class="card">
+        <h3>🥖 {{ i18n "card_bread" }}</h3>
+        <p>{{ i18n "desc_bread" }}</p>
+      </div>
+      <div class="card">
+        <h3>🧀 {{ i18n "card_cheese" }}</h3>
+        <p>{{ i18n "desc_cheese" }}</p>
+      </div>
+      <div class="card">
+        <h3>🧼 {{ i18n "card_household" }}</h3>
+        <p>{{ i18n "desc_household" }}</p>
+      </div>
+      <div class="card">
+        <h3>🎁 {{ i18n "card_souvenir" }}</h3>
+        <p>{{ i18n "desc_souvenir" }}</p>
+      </div>
+      <div class="card">
+        <h3>🍝 {{ i18n "card_pasta" }}</h3>
+        <p>{{ i18n "desc_pasta" }}</p>
+      </div>
+      <div class="card">
+        <h3>🍯 {{ i18n "card_jam" }}</h3>
+        <p>{{ i18n "desc_jam" }}</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
