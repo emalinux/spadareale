@@ -29,8 +29,10 @@
         </p>
 
         <p>I prezzi variano in base al periodo scelto e alla modalità di soggiorno.</p>
-
-        <a href="/it/camere/" class="btn-camere">Le Nostre Camere</a>
+        
+        <div class="btn-wrapper">
+          <a href="/it/camere/" class="btn-camere">Le Nostre Camere</a>
+        </div>
 
       {{ else if eq .Site.Language.Lang "en" }}
         <p>
@@ -50,8 +52,10 @@
         </p>
 
         <p>Prices vary depending on the period and type of stay.</p>
-
+        
+        <div class="btn-wrapper">
         <a href="/en/rooms/" class="btn-camere">Discover more</a>
+        </div>
 
       {{ else if eq .Site.Language.Lang "fr" }}
         <p>
@@ -71,8 +75,10 @@
         </p>
 
         <p>Les prix varient selon la période choisie et le type de séjour.</p>
-
+        
+        <div class="btn-wrapper">
         <a href="/fr/chambres/" class="btn-camere">En savoir plus</a>
+        </div>
 
       {{ end }}
 
