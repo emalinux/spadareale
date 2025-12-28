@@ -3,7 +3,7 @@
 Sito ufficiale del **Ristorante Spada Reale**, nel cuore del Parco delle Alpi Marittime (Roaschia, CN).  
 Camere accoglienti, cucina locale e una piccola bottega artigianale: un rifugio tra natura, silenzio e tradizione.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6ee7e16a-783e-46f0-820e-5edb3b169305/deploy-status)](https://demospada-reale.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3bde555c-2077-4452-87c5-5d88960f2610/deploy-status)](https://app.netlify.com/projects/demospada-reale/deploys)
 
 ---
 
@@ -23,7 +23,7 @@ Camere accoglienti, cucina locale e una piccola bottega artigianale: un rifugio 
 - Configurato tramite `netlify.toml`
 - Dominio demo: [https://demospada-reale.netlify.app](https://demospada-reale.netlify.app)
 
-```toml
+
 # netlify.toml (estratto)
 [build]
   publish = "public"
