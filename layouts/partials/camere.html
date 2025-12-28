@@ -13,15 +13,18 @@
 
       {{ if eq .Site.Language.Lang "it" }}
         <p>
-          Lo Spada Reale offre diverse tipologie di camere per soddisfare le esigenze dei nostri ospiti:<br>
-          • Camere piccole e confortevoli, ideali per chi viaggia da solo.<br>
-          • Camere matrimoniali.
+          Lo Spada Reale offre diverse tipologie di camere per soddisfare le esigenze dei nostri ospiti:
         </p>
+
+        <div class="camere-elenco">
+          • Camere piccole e confortevoli, ideali per chi viaggia da solo.<br>
+          • Camere matrimoniali, luminose, spaziose e arredate con cura.
+        </div>
 
         <p>Tutte le nostre camere dispongono di un bagno interno, piccolo ma privato.</p>
 
         <p>
-          Per soggiorni più lunghi, è disponibile l’appartamento vacanze Spada Reale, dotato di
+          Per soggiorni più lunghi o personalizzati , è disponibile l’appartamento vacanze Spada Reale, dotato di ben
           due camere da letto, un bagno, un’ampia cucina e un soggiorno.
         </p>
 
@@ -31,10 +34,13 @@
 
       {{ else if eq .Site.Language.Lang "en" }}
         <p>
-          Spada Reale offers different types of rooms to meet the needs of our guests:<br>
-          • Small and cozy rooms, ideal for solo travelers.<br>
-          • Double rooms.
+          Spada Reale offers different types of rooms to meet the needs of our guests:
         </p>
+
+        <div class="camere-elenco">
+          • Small and cozy rooms, ideal for solo travelers.<br>
+          • Double rooms, bright, spacious and tastefully furnished.
+        </div>
 
         <p>All our rooms have a private internal bathroom, small but functional.</p>
 
@@ -49,10 +55,13 @@
 
       {{ else if eq .Site.Language.Lang "fr" }}
         <p>
-          Le Spada Reale propose différents types de chambres pour répondre aux besoins de nos hôtes :<br>
-          • Chambres petites et confortables, idéales pour les voyageurs seuls.<br>
-          • Chambres doubles.
+          Le Spada Reale propose différents types de chambres pour répondre aux besoins de nos hôtes :
         </p>
+
+        <div class="camere-elenco">
+          • Chambres petites et confortables, idéales pour les voyageurs seuls.<br>
+          • Chambres doubles, lumineuses, spacieuses et décorées avec goût..
+        </div>
 
         <p>Toutes nos chambres disposent d’une salle de bain privative, petite mais fonctionnelle.</p>
 
@@ -66,6 +75,7 @@
         <a href="/fr/chambres/" class="btn-camere">En savoir plus</a>
 
       {{ end }}
+
     </div>
   </div>
 </section>

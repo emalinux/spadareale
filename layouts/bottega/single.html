@@ -15,14 +15,20 @@
     <div class="bottega-intro">
       <div class="bottega-text">
         {{ if eq .Site.Language.Lang "it" }}
-          <p><strong>La Piccola Bottega</strong> dello Spada Reale si trova accanto all’albergo ed è un punto di riferimento per abitanti e ospiti. Piccola, ma con tutto il necessario!</p>
-          <p>Pane fresco, prodotti tipici, articoli per la casa, souvenir e tante altre specialità locali ti aspettano in un ambiente semplice e familiare.</p>
+          <p><strong>La Piccola Bottega</strong> dello Spada Reale si trova accanto all’albergo ed è un punto di riferimento per abitanti e ospiti. Piccola ma fornitissima, è il luogo ideale dove acquistare prodotti utili e tipici durante il soggiorno.</p>
+          <p>Ogni mattina trovi <strong>pane fresco</strong>, <strong>formaggi locali</strong> e <strong>prodotti artigianali</strong> selezionati dal territorio. Sugli scaffali non mancano articoli per la casa, souvenir, detersivi e alimentari di prima necessità.</p>
+          <p>È un ambiente semplice e familiare, gestito con passione, dove ogni cliente viene accolto con un sorriso. Anche chi non soggiorna in albergo si ferma volentieri per fare due chiacchiere e acquistare qualcosa di buono.</p>
+          <p>Ogni angolo del negozio racconta una storia, ricca di profumi di montagna e fascino rustico.</p>
         {{ else if eq .Site.Language.Lang "en" }}
-          <p><strong>The Little Shop</strong> of Spada Reale is located right next to the hotel and serves as a reference point for guests and locals. Small, but full of everything you need!</p>
-          <p>Fresh bread, typical products, home supplies, souvenirs and many other local specialties await you in a simple and friendly setting.</p>
+          <p><strong>The Little Shop</strong> of Spada Reale is located right next to the hotel and serves as a small but essential landmark for both guests and locals. Though compact, it’s fully stocked with everything you might need during your stay.</p>
+          <p>Every morning you’ll find <strong>fresh bread</strong>, <strong>local cheeses</strong>, and <strong>traditional handmade products</strong>. The shelves are filled with household items, basic groceries, detergents, and charming souvenirs.</p>
+          <p>It’s a cozy and friendly environment run with care and passion, where every visitor is welcomed with a smile. Even people who aren’t staying at the hotel often stop by for a quick chat and to pick up something good.</p>
+          <p>Every corner of the shop tells a story, filled with mountain scents and rustic charm.</p>
         {{ else if eq .Site.Language.Lang "fr" }}
-          <p><strong>La Petite Boutique</strong> du Spada Reale se trouve à côté de l’hôtel et constitue un point de repère pour les habitants et les visiteurs. Petite, mais avec tout ce qu’il faut !</p>
-          <p>Pain frais, produits typiques, articles ménagers, souvenirs et bien d’autres spécialités locales vous attendent dans un cadre simple et chaleureux.</p>
+          <p><strong>La Petite Boutique</strong> du Spada Reale se trouve juste à côté de l’hôtel et constitue un repère apprécié des hôtes comme des habitants. Petite mais bien fournie, elle offre tout le nécessaire pour votre séjour.</p>
+          <p>Chaque matin, vous y trouverez du <strong>pain frais</strong>, des <strong>fromages locaux</strong> et des <strong>produits artisanaux traditionnels</strong>. Les étagères regorgent d’articles ménagers, d’aliments de base, de détergents et de jolis souvenirs.</p>
+          <p>C’est un lieu simple et chaleureux, géré avec passion, où chaque client est accueilli avec le sourire. Même ceux qui ne séjournent pas à l’hôtel s’y arrêtent volontiers pour discuter et acheter quelque chose de bon.</p>
+          <p>Chaque recoin de la boutique raconte une histoire, avec des parfums de montagne et un charme rustique.</p>
         {{ end }}
       </div>
       <div class="bottega-img">
@@ -32,31 +38,29 @@
 
     <!-- CARD PRODOTTI BOTTEGA -->
     <div class="bottega-cards">
-      <div class="card">
-        <h3>🥖 {{ i18n "card_bread" }}</h3>
-        <p>{{ i18n "desc_bread" }}</p>
-      </div>
-      <div class="card">
-        <h3>🧀 {{ i18n "card_cheese" }}</h3>
-        <p>{{ i18n "desc_cheese" }}</p>
-      </div>
-      <div class="card">
-        <h3>🧼 {{ i18n "card_household" }}</h3>
-        <p>{{ i18n "desc_household" }}</p>
-      </div>
-      <div class="card">
-        <h3>🎁 {{ i18n "card_souvenir" }}</h3>
-        <p>{{ i18n "desc_souvenir" }}</p>
-      </div>
-      <div class="card">
-        <h3>🍝 {{ i18n "card_pasta" }}</h3>
-        <p>{{ i18n "desc_pasta" }}</p>
-      </div>
-      <div class="card">
-        <h3>🍯 {{ i18n "card_jam" }}</h3>
-        <p>{{ i18n "desc_jam" }}</p>
-      </div>
-    </div>
+  {{ if eq .Site.Language.Lang "it" }}
+    <div class="card"><h3>🥖 Pane fresco</h3><p>Sfornato ogni mattina, perfetto per la colazione o per i panini da gita.</p></div>
+    <div class="card"><h3>🧀 Formaggi</h3><p>Selezione di formaggi locali, dal delicato al più stagionato.</p></div>
+    <div class="card"><h3>🧼 Prodotti per la casa</h3><p>Detersivi, carta casa, articoli utili per la vita quotidiana.</p></div>
+    <div class="card"><h3>🎁 Souvenir</h3><p>Piccoli regali, articoli artigianali, idee originali da portare a casa.</p></div>
+    <div class="card"><h3>🍝 Pasta fresca</h3><p>Tagliatelle, ravioli e altri formati tipici da cucinare in appartamento.</p></div>
+    <div class="card"><h3>🍯 Miele & Confetture</h3><p>Gustose conserve locali, ideali a colazione o da regalare.</p></div>
+  {{ else if eq .Site.Language.Lang "en" }}
+    <div class="card"><h3>🥖 Fresh Bread</h3><p>Baked daily – perfect for breakfast or picnic sandwiches.</p></div>
+    <div class="card"><h3>🧀 Cheese</h3><p>Selection of local cheeses, from mild to aged varieties.</p></div>
+    <div class="card"><h3>🧼 Household Supplies</h3><p>Cleaning products, paper goods, and daily essentials.</p></div>
+    <div class="card"><h3>🎁 Souvenirs</h3><p>Small handmade gifts and mementos from the Alps.</p></div>
+    <div class="card"><h3>🍝 Fresh Pasta</h3><p>Tagliatelle, ravioli and more – ideal for home-cooked meals.</p></div>
+    <div class="card"><h3>🍯 Jam & Honey</h3><p>Delicious homemade spreads made by local producers.</p></div>
+  {{ else }}
+    <div class="card"><h3>🥖 Pain frais</h3><p>Cuit chaque matin, parfait pour le petit-déjeuner ou les sandwichs.</p></div>
+    <div class="card"><h3>🧀 Fromages</h3><p>Sélection de fromages locaux, doux ou affinés.</p></div>
+    <div class="card"><h3>🧼 Produits ménagers</h3><p>Détergents, papier, articles pratiques pour le quotidien.</p></div>
+    <div class="card"><h3>🎁 Souvenirs</h3><p>Cadeaux artisanaux, objets typiques à ramener chez soi.</p></div>
+    <div class="card"><h3>🍝 Pâtes fraîches</h3><p>Tagliatelles, raviolis et autres spécialités régionales.</p></div>
+    <div class="card"><h3>🍯 Miel & Confitures</h3><p>Délices sucrés préparés localement avec amour.</p></div>
+  {{ end }}
+</div>
 
   </div>
 </section>
