@@ -1,52 +1,69 @@
-# 🌄 Spada Reale – Ristorante · Camere · Piccola Bottega
+# 🌄 Spada Reale — Ristorante · Camere · Piccola Bottega
 
-**Sito ufficiale del Ristorante Spada Reale**, immerso nel cuore del Parco delle Alpi Marittime, a Roaschia (CN).
+Sito ufficiale del **Ristorante Spada Reale**, nel cuore del Parco delle Alpi Marittime (Roaschia, CN).  
+Camere accoglienti, cucina locale e una piccola bottega artigianale: un rifugio tra natura, silenzio e tradizione.
 
-Camere accoglienti, cucina locale e una piccola bottega artigianale: un rifugio tranquillo tra natura, silenzio e tradizione.
-
----
-
-## 🔧 Progetto
-
-- **Static Site Generator:** [Hugo](https://gohugo.io/)
-- **Hosting:** [Netlify](https://www.netlify.com/)
-- **Repository Git:** gestito localmente e pubblicato su GitHub
-- **Lingue:** Italiano 🇮🇹 · Inglese 🇬🇧 · Francese 🇫🇷
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6ee7e16a-783e-46f0-820e-5edb3b169305/deploy-status)](https://demospada-reale.netlify.app)
 
 ---
 
-## 🚀 Deploy automatico
+## 🔧 Stack Tecnico
 
-[![Netlify Status]([![Netlify Status](https://api.netlify.com/api/v1/badges/3bde555c-2077-4452-87c5-5d88960f2610/deploy-status)](https://app.netlify.com/projects/demospada-reale/deploys)](https://demospada-reale.netlify.app)
-
-Ogni push sul branch `main` attiva un deploy automatico su Netlify.
+- **Generator:** [Hugo](https://gohugo.io/) `v0.125.6`
+- **Hosting/CDN:** [Netlify](https://www.netlify.com)
+- **Repo:** [GitHub](https://github.com/emalinux/spadareale)
+- **Lingue supportate:** 🇮🇹 IT · 🇬🇧 EN · 🇫🇷 FR
+- **Tema:** Custom sviluppato da zero (`layouts/`, `partials/`, `style.css`)
 
 ---
 
-## 📁 Struttura principale
+## ⚙️ Deploy automatico
+
+- Trigger: ogni `git push` su `main`
+- Configurato tramite `netlify.toml`
+- Dominio demo: [https://demospada-reale.netlify.app](https://demospada-reale.netlify.app)
+
+```toml
+# netlify.toml (estratto)
+[build]
+  publish = "public"
+  command = "hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.125.6"
+
+[context.deploy-preview]
+  command = "hugo --buildFuture"
+
+---
+
+## 📁 Struttura progetto
 
 spadareale/
-├── content/it/
-├── layouts/
-├── static/
-│   └── img/
-├── assets/
-├── config.toml
-├── netlify.toml
+├── assets/                # Risorse statiche (font, custom styles, ecc.)
+├── content/              # Contenuti multilingua
+│   ├── it/
+│   ├── en/
+│   └── fr/
+├── layouts/              # Template Hugo
+├── static/               # Immagini e file statici (favicon, css, img/)
+├── config.toml           # Configurazione principale Hugo
+├── netlify.toml          # Configurazione deploy Netlify
 └── README.md
 
----
-
-## 📌 Autore
+## 🧑‍💻 Autore
 
 Realizzato con ❤️ da [Manuel – Assembler Computer](https://www.assemblercomputer.net/)
 
 Contatti diretti? [📧 emalinux77@gmail.com](mailto:emalinux77@gmail.com)
 
----
 
-## 🧠 Note finali
+⸻
 
-- Tema sviluppato da zero, **responsive** e leggero
-- SEO curato
-- Ottimizzato per **prestazioni** e **accessibilità**
+📝 Note tecniche
+
+•✅ Tema custom responsive e leggero (senza framework)
+•✅ Multilingua gestito via struttura /content/
+•✅ Ottimizzato per SEO e prestazioni
+•✅ Favicon personalizzata
+•🚀 Deploy preview per testing su Netlify
