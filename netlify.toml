@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  publish = "public"
+  command = "hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.125.6"
+
+[context.deploy-preview]
+  command = "hugo --buildFuture"
