@@ -39,17 +39,21 @@ Camere accoglienti, cucina locale e una piccola bottega artigianale: un rifugio 
 
 ## 📁 Struttura progetto
 
+```plaintext
 spadareale/
-├── assets/                # Risorse statiche (font, custom styles, ecc.)
-├── content/              # Contenuti multilingua
+├── assets/         # Risorse statiche (font, custom styles, ecc.)
+├── content/        # Contenuti multilingua
 │   ├── it/
 │   ├── en/
 │   └── fr/
-├── layouts/              # Template Hugo
-├── static/               # Immagini e file statici (favicon, css, img/)
-├── config.toml           # Configurazione principale Hugo
-├── netlify.toml          # Configurazione deploy Netlify
+├── layouts/        # Template Hugo
+├── static/         # Immagini e file statici (favicon, css, img/)
+├── config.toml     # Configurazione principale Hugo
+├── netlify.toml    # Configurazione deploy Netlify
 └── README.md
+```
+
+---
 
 ## 🧑‍💻 Autore
 
@@ -59,11 +63,11 @@ Contatti diretti? [📧 emalinux77@gmail.com](mailto:emalinux77@gmail.com)
 
 
 ⸻
-
+```plaintext
 📝 Note tecniche
-
-•✅ Tema custom responsive e leggero (senza framework)
-•✅ Multilingua gestito via struttura /content/
-•✅ Ottimizzato per SEO e prestazioni
-•✅ Favicon personalizzata
-•🚀 Deploy preview per testing su Netlify
+	•	✅ Tema custom responsive e leggero (senza framework)
+	•	✅ Multilingua gestito via struttura /content/
+	•	✅ Ottimizzato per SEO e prestazioni
+	•	✅ Favicon personalizzata
+	•	🚀 Deploy preview per testing su Netlify
+```
