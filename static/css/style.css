@@ -392,7 +392,7 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
    🏡 CAMERE SEZIONE HOME
 ========================== */
 .camere-bg {
-  background: url('/img/hero-camere.jpg') center center / cover no-repeat;
+  background: url('/img/hero-camere.jpeg') center center / cover no-repeat;
   position: relative;
   min-height: 650px; /* aumentato per non schiacciare sfondo */
   display: flex;
