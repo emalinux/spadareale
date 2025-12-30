@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<section class="section section--titolo-esterno">
+  <h2 class="section-title">
+    {{ if eq .Site.Language.Lang "it" }}📜 Regolamento{{ end }}
+    {{ if eq .Site.Language.Lang "en" }}📜 House Rules{{ end }}
+    {{ if eq .Site.Language.Lang "fr" }}📜 Règlement{{ end }}
+  </h2>
+</section>
+
+<section class="section section--regolamento">
+  <div class="regolamento-wrapper">
+
+    {{ if eq .Site.Language.Lang "it" }}
+      <p>Per garantire a tutti un soggiorno piacevole, vi invitiamo a rispettare alcune semplici regole di buona convivenza:</p>
+      <ul>
+        <li>🚭 È vietato fumare all’interno delle camere e degli spazi comuni.</li>
+        <li>🐾 <strong>Non sono ammessi animali</strong> per gravi motivi di allergia dei titolari.</li>
+        <li>🔇 Dopo le ore 23:00, si prega di mantenere il volume basso (TV, musica, voce).</li>
+        <li>🔐 Non lasciare oggetti di valore incustoditi: la direzione declina ogni responsabilità.</li>
+        <li>🕙 Check-in dalle 14:00 – Check-out entro le 10:00.</li>
+      </ul>
+      <p>Per qualsiasi esigenza o richiesta, siamo a disposizione. Grazie per la collaborazione!</p>
+
+    {{ else if eq .Site.Language.Lang "en" }}
+      <p>To ensure a pleasant stay for everyone, we kindly ask guests to follow a few simple guidelines:</p>
+      <ul>
+        <li>🚭 Smoking is not allowed inside rooms or common areas.</li>
+        <li>🐾 <strong>No animals allowed</strong> due to severe allergies of the owners.</li>
+        <li>🔇 Please keep noise to a minimum after 11:00 PM (TV, music, talking).</li>
+        <li>🔐 Do not leave valuables unattended. The management is not responsible for lost items.</li>
+        <li>🕙 Check-in from 2:00 PM – Check-out by 10:00 AM.</li>
+      </ul>
+      <p>If you need anything during your stay, don't hesitate to ask. Thank you for your understanding!</p>
+
+    {{ else if eq .Site.Language.Lang "fr" }}
+      <p>Pour garantir un séjour agréable à tous, merci de respecter ces quelques règles de bon sens :</p>
+      <ul>
+        <li>🚭 Il est interdit de fumer dans les chambres et les espaces communs.</li>
+        <li>🐾 <strong>Les animaux ne sont pas autorisés</strong> en raison de fortes allergies des propriétaires.</li>
+        <li>🔇 Merci de limiter le bruit après 23h (TV, musique, discussions).</li>
+        <li>🔐 Ne laissez pas d’objets de valeur sans surveillance. La direction décline toute responsabilité.</li>
+        <li>🕙 Check-in à partir de 14h – Check-out avant 10h.</li>
+      </ul>
+      <p>Pour toute question ou demande, nous sommes à votre écoute. Merci de votre coopération !</p>
+    {{ end }}
+
+  </div>
+</section>
+
+{{ end }}

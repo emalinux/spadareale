@@ -11,10 +11,19 @@
       <p><strong>Spada Reale</strong></p>
       <p><strong>Ristorante - Camere - Piccola Bottega</strong></p>
       <p>📍 Via Barale 11, 12010 Roaschia (CN)</p>
-      <p>📞 +39 342 1228735</p>
+      <p>📞 +39 342 1228735 - 0171 758138</p>
       <p>📧 <a href="mailto:spadareale@yahoo.it">spadareale@yahoo.it</a></p>
       <p>🧾 P. IVA: 03561750047</p>
-      <p>🏛️ CIN: 0000000</p>
+      <p>🏛️ CIN: IT004183B42FAZJOBO</p>
+      <p>
+  {{ if eq .Site.Language.Lang "it" }}
+    <a href="/it/regolamento">📜 Leggi il nostro regolamento</a>
+  {{ else if eq .Site.Language.Lang "en" }}
+    <a href="/en/regulation">📜 Read our house rules</a>
+  {{ else if eq .Site.Language.Lang "fr" }}
+    <a href="/fr/reglement">📜 Lire notre règlement</a>
+  {{ end }}
+</p>
       <p style="margin-top: 1rem;">
         Realizzato con ❤️ da 
         <a href="https://www.assemblercomputer.net/">Manuel – Assembler Computer</a>

@@ -865,3 +865,19 @@ input[type="radio"]:checked + .carousel-images + .carousel-nav label {
   }
 }
 
+/* =======================
+  📜  REGOLAMENTO PAGINA
+======================= */
+
+.section--regolamento ul {
+  margin-top: 2rem;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.section--regolamento li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
